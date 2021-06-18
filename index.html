@@ -2,11 +2,22 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="interface.css" />
 		<body>
-			<h1>hi ryan</h1>
+			<h1>lemonade stand</h1>
 			<br>
 			<br>
-			<h3><strong>times you have pressed this button: </strong><span id="glasses"><strong></strong></span></h3>
-			<button type="button" onClick="makeLemonade(1)">the aforementioned button</button>
+			<div id="mainclick">
+				<h3>Wallet: $<span id="money">0.00</span></h3>
+				<h3><strong>Glasses of Lemonade: </strong><span id="glasses"><strong></strong></span></h3>
+				<button type="button" onClick="makeLemonade(1)">Make Lemonade</button>
+				<br>
+				<h5>Liters of Water: <span id="water">20.00</span></h5>
+				<h5>Tablespoons of Sugar: <span id="sugar"></span></h5>
+				<h5>Lemons: <span id="lemons"></span></h5>
+			</div>
+			<br>
+			<div id="autoclick">
+			<button type = "button" onClick="buyFriend">Buy Friend</button>
+			</div>
 			<script type="text/javascript" src="main.js"></script>
 		</body>
 	</head>
