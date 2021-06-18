@@ -10,13 +10,13 @@
 				<h3><strong>Glasses of Lemonade: </strong><span id="glasses"><strong></strong></span></h3>
 				<button type="button" onClick="makeLemonade(1)">Make Lemonade</button>
 				<br>
-				<h5>Liters of Water: <span id="water">20.00</span></h5>
-				<h5>Tablespoons of Sugar: <span id="sugar"></span></h5>
-				<h5>Lemons: <span id="lemons"></span></h5>
+				<h5>Liters of Water: <span id="water">20.00</span><span>   </span><button type="button" onClick="buyWater(10)">Buy 10L of Water: $3.00</button></h5>
+				<h5>Tablespoons of Sugar: <span id="sugar">300</span><span>   </span><button type="button" onClick="buySugar(100)">Buy 100 Tbsp Sugar: $5.00</button></h5>
+				<h5>Lemons: <span id="lemons">50</span><span>   </span><button type="button" onClick="buyLemons(50)">Buy 50 Lemons: $2.50</button></h5>
 			</div>
 			<br>
 			<div id="autoclick">
-			<button type = "button" onClick="buyFriend">Buy Friend</button>
+			<button type = "button" onClick="buyFriend()">Hire Friend for $<span id=friendCost>10.00</span></button><span>     Friends: </span><span id="friends">0</span>
 			</div>
 			<script type="text/javascript" src="main.js"></script>
 		</body>
