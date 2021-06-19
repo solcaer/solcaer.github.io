@@ -2,7 +2,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="interface.css" />
 		<body>
-			<h1>lemonade stand</h1>
+			<h1><strong>lemonade stand</strong></h1>
 			<br>
 			<br>
 			<div id="mainclick">
@@ -16,7 +16,22 @@
 			</div>
 			<br>
 			<div id="autoclick">
-			<button type = "button" onClick="buyFriend()">Hire Friend for $<span id=friendCost>10.00</span></button><span>     Friends: </span><span id="friends">0</span>
+				<div id="friendClick">
+					<button type = "button" onClick="buyFriend()">Hire Friend for $<span id=friendCost>10.00</span></button><span>     Friends: </span><span id="friends">0</span>
+				</div>
+				<div id="parentClick">
+					<button type = "button" onClick="buyParent()">Hire Parent for $<span id=parentCost>100.00</span></button><span>     Parents: </span><span id="parents">0</span>
+				</div>
+			</div>
+			<br>
+			<div id="buySpeedButtons">
+				<div id="buySignButton">
+					<button type = "button" onClick="buySign()">Bigger Lemonade Sign: $50</button>
+				</div>
+				<div id ="buyParkButton">
+					<button type = "button" onClick="buyPark()">Move Stand to Park: $100</button>
+				</div>
+				<h5>Customer Buy Speed: x<span id="buySpeed">1</span></h5>
 			</div>
 			<script type="text/javascript" src="main.js"></script>
 		</body>
